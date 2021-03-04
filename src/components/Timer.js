@@ -36,15 +36,23 @@ const date2 =  props.dateToExpire  - new Date()
   };
 
   return (
+
+    // <div className="main-container">
     <div className="card-container" style={{backgroundColor: props.backgroundColor}}>
- 
+      
     <div className="timer-container">
-        <Countdown date={Date.now() + date2} renderer={renderer} />
+      <div className="containerr">
+        <Countdown className="countdown" date={Date.now() + date2} renderer={renderer} />
           <p className="message">{props.message}</p>
     </div>
+    </div>
+    <div className="picture">
     {picture}
+    </div>
+   
          
     </div>
+    // </div>
   )
 
 }
