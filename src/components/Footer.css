@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    min-height: 256px;
+    padding: 0 70px;
+}
+
+.credits-line {
+    width: 400px;
+}
+.credits-p {
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: left;
+}
+
+.credits-a {
+    font-style: normal;
+    color: #5379ff;
+    margin-left: 79px;
+    width: 200px;
+    float: right;
+    text-decoration: none;
+}
+
+.slogan-p {
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: right;
+}

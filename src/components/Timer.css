@@ -5,23 +5,27 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: 140px;
+    min-height: 200px;
 }
 
 .message {
     font-weight: 300;
+    letter-spacing: 2px;
     font-size: 24px;
     min-width: 500px;
+    margin: 0;
+    padding-top: 5px;
 }
 .timer {
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 800;
+    font-size: 45px;
     min-width: 500px;
+    font-style: italic;
 }
 
 .timer-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
@@ -37,4 +41,31 @@
     flex: 1;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 550px;
+    margin-right: 70px;
+}
+.muscle-man {
+    max-width: 85px;
+    margin: 2px;
+}
+
+.muscle-men-6 {
+    max-width: 273px !important;
+}
+.muscle-men-card-6 {
+    height: 250px;
+}
+
+.muscle-men-card-12 {
+    height: 280px;
+}
+.after-text {
+    font-weight: 800;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.font-size-35 {
+    font-size: 35px;
 }
