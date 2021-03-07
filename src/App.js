@@ -13,11 +13,8 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
     return (
         <> 
-               <Navbarr />
+        <Navbarr />
         <div className="App">
-     
-        {/* <Navbar2 />
-         */}
             <div className="App-header">
               <div className="timer-container">
                 <Timer dateToExpire={new Date(2021, 2, 5, 23, 41)} message={"WORKOUT WITH A FRIEND IN THE PARK"} backgroundColor="#00F5D4" numberOfImages={1} key={"1"} />

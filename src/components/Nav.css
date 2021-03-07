@@ -12,12 +12,14 @@
     margin-right: auto;
     margin-left: 70px;
     width: 70px;
+    z-index: 10000;
 }
 
 .nav-link {
     margin-left: auto;
     margin-right: 70px;
     display: flex;
+    padding: 0 !important;
 }
 @media screen and (max-width: 768px) {
     .nav-link {
