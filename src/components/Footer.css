@@ -33,3 +33,40 @@
     font-style: italic;
     text-align: right;
 }
+.footer-link {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        min-height: 98px !important;
+        height: 98px;
+        position: sticky !important;
+        bottom: 0 !important;
+        background-color: black;
+        width: 100%;
+        display: flex !important;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+        color: white;
+        padding: 0;
+    }
+    .footer-link {
+        display: block !important;
+    }
+    .nav-link-footer a {
+        color: white !important;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .arrow {
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    .credits,
+    .slogan {
+        display: none !important;
+    }
+}

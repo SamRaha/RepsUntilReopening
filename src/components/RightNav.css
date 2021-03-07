@@ -1,0 +1,25 @@
+.credits-line-rightnav {
+    /* width: 300px; */
+}
+.credits-p-rightnav {
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: left;
+}
+
+.credits-a-rightnav {
+    font-style: normal;
+    color: #5379ff;
+    margin-left: 79px;
+    width: 200px;
+    float: right;
+    text-decoration: none;
+}
+
+.slogan-p-rightnav {
+    font-size: 25px;
+    font-weight: 500;
+    font-style: italic;
+    text-align: right;
+}

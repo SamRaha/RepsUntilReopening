@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "./RightNav.css";
 
 const Ul = styled.ul`
     list-style: none;
@@ -26,30 +27,30 @@ const RightNav = ({ open }) => {
     return (
         <Ul open={open}>
             <div className="nav-dropdown">
-                <div className="credits">
-                    <div className="credits-line">
-                        <p className="credits-p">
+                <div className="credits-rightnav">
+                    <div className="credits-line-rightnav">
+                        <p className="credits-p-rightnav">
                             CODE:{" "}
-                            <a className="credits-a" href="https://www.linkedin.com/in/sam-raha-6983a4b6/">
+                            <a className="credits-a-rightnav" href="https://www.linkedin.com/in/sam-raha-6983a4b6/">
                                 SAM RAHA
                             </a>{" "}
                         </p>
-                        <p className="credits-p">
+                        <p className="credits-p-rightnav">
                             DESIGN:{" "}
-                            <a className="credits-a" href="https://www.linkedin.com/in/j4seph/">
+                            <a className="credits-a-rightnav" href="https://www.linkedin.com/in/j4seph/">
                                 JOSEPH KELLY
                             </a>{" "}
                         </p>
-                        <p className="credits-p">
+                        <p className="credits-p-rightnav">
                             DATA:{" "}
-                            <a className="credits-a" href="https://www.bbc.co.uk/news/explainers-52530518">
+                            <a className="credits-a-rightnav" href="https://www.bbc.co.uk/news/explainers-52530518">
                                 BBC
                             </a>{" "}
                         </p>
                     </div>
                 </div>
-                <div className="slogan">
-                    <p className="slogan-p">
+                <div className="slogan-rightnav">
+                    <p className="slogan-p-rightnav">
                         REPS <br></br>TOWARDS<br></br> REOPENING
                     </p>
                 </div>

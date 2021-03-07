@@ -69,3 +69,17 @@
 .font-size-35 {
     font-size: 35px;
 }
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        height: 414px;
+    }
+    .message {
+        font-size: 1.1rem;
+        min-width: 0px;
+    }
+    .timer {
+        font-size: 22px;
+        min-width: 0px;
+    }
+}
