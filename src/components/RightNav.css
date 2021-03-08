@@ -23,3 +23,21 @@
     font-style: italic;
     text-align: right;
 }
+
+@media screen and (max-width: 768px) {
+    .credits-p-rightnav {
+        max-width: 400px;
+        justify-content: flex-start;
+        text-align: left;
+        margin: auto;
+    }
+    .credits-a-rightnav {
+        margin-left: 50px;
+        text-align: right;
+        width: 160px;
+    }
+    .slogan-p-rightnav {
+        margin-bottom: 90px;
+        text-align: center;
+    }
+}

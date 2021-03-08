@@ -18,7 +18,6 @@ const Navbar = () => {
     return (
         <Nav>
             <div className="navbar">
-                {" "}
                 <svg className="logo-image" width="84" height="38" viewBox="0 0 84 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="6.36734" y="6.68219" width="6.12245" height="24.4898" rx="2.65889" fill="white" />
                     <rect x="77.6327" y="31.172" width="6.12245" height="24.4898" rx="2.65889" transform="rotate(-180 77.6327 31.172)" fill="white" />

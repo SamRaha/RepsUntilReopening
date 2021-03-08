@@ -30,22 +30,22 @@ const RightNav = ({ open }) => {
                 <div className="credits-rightnav">
                     <div className="credits-line-rightnav">
                         <p className="credits-p-rightnav">
-                            CODE:{" "}
+                            CODE:
                             <a className="credits-a-rightnav" href="https://www.linkedin.com/in/sam-raha-6983a4b6/">
                                 SAM RAHA
-                            </a>{" "}
+                            </a>
                         </p>
                         <p className="credits-p-rightnav">
-                            DESIGN:{" "}
+                            DESIGN:
                             <a className="credits-a-rightnav" href="https://www.linkedin.com/in/j4seph/">
                                 JOSEPH KELLY
-                            </a>{" "}
+                            </a>
                         </p>
                         <p className="credits-p-rightnav">
-                            DATA:{" "}
+                            DATA:
                             <a className="credits-a-rightnav" href="https://www.bbc.co.uk/news/explainers-52530518">
                                 BBC
-                            </a>{" "}
+                            </a>
                         </p>
                     </div>
                 </div>

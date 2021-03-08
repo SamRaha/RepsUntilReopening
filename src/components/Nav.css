@@ -25,6 +25,12 @@
     .nav-link {
         display: none !important;
     }
+    .logo-image {
+        margin-left: 0 !important;
+    }
+    .navbar {
+        padding: 0 20px;
+    }
 }
 .nav-link a {
     color: white !important;
@@ -44,7 +50,6 @@
 
 .nav-dropdown {
     position: fixed;
-    z-index: 1;
     height: 100vh;
     width: 100%;
     background-color: black;
@@ -54,6 +59,14 @@
     align-items: center;
     color: white;
     flex-direction: column;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-dropdown {
+        padding: 100px 5px !important;
+        text-align: center;
+    }
 }
 
 .credits-p {
