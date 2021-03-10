@@ -2,9 +2,30 @@ import React, { useState, useEffect } from "react";
 import Countdown from "react-countdown";
 import "./Timer.css";
 import muscleMan from "../assets/muscle-man.png";
+import { useMediaQuery } from "react-responsive";
 
 function Timer(props) {
-    console.log("props is", props);
+    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+    console.log("isMobile: ", isMobile);
+
+    let mobileImage;
+    let mobileImage2;
+    let desktopImage;
+    if (isMobile) {
+        mobileImage = <img src={props.mobileImage}></img>;
+        mobileImage2 = <img src={props.mobileImage2} style={{ transform: "scaleX(-1)" }}></img>;
+    } else {
+        mobileImage = "";
+        mobileImage2 = "";
+    }
+    if (!isMobile) {
+        desktopImage = <img src={props.desktopImage}></img>;
+    } else {
+        desktopImage = "";
+    }
+
+    // let desktopImage2 = <img src={props.desktopImage2}></img>;
+
     let picture = [];
 
     for (let i = 0; i < props.numberOfImages; i++) {
@@ -67,17 +88,20 @@ function Timer(props) {
     };
 
     return (
-        // <div className="main-container">
-        <div className={`card-container ${props.classNameCard} `} style={{ backgroundColor: props.backgroundColor }}>
-            <div className="timer-container">
-                <div className="containerr">
-                    <Countdown className="countdown" date={Date.now() + date2} renderer={renderer} />
-                    <p className="message">{props.message}</p>
+        <>
+            <div className={`card-container ${props.classNameCard} `} style={{ backgroundColor: props.backgroundColor }}>
+                <div className="timer-container">
+                    <div className="containerr">
+                        <Countdown className="countdown" date={Date.now() + date2} renderer={renderer} />
+                        <p className="message">{props.message}</p>
+                    </div>
+                </div>
+                <div className={`picture ${props.classNamePicture} `}>
+                    {/* {picture}  */}
+                    {desktopImage} {mobileImage} {mobileImage2}
                 </div>
             </div>
-            <div className={`picture ${props.classNamePicture} `}>{picture}</div>
-        </div>
-        // </div>
+        </>
     );
 }
 export default Timer;

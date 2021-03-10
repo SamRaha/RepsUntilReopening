@@ -7,6 +7,9 @@
     /* justify-content: center; */
     align-items: center;
 }
+nav {
+    z-index: 50 !important;
+}
 
 .logo-image {
     margin-right: auto;
