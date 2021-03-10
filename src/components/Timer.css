@@ -90,7 +90,7 @@
         flex-direction: column;
         text-align: center !important;
         padding: 5px;
-        justify-content: space-around !important;
+        /* justify-content: space-around !important; */
     }
     .after-text {
         font-size: 22px;
@@ -108,11 +108,13 @@
     }
     .timer-container {
         flex: 0;
+        margin: auto !important;
     }
     .picture {
         margin: 0 !important;
         flex: 0;
         justify-content: center;
+        margin: auto !important;
     }
     .muscle-man {
         width: 80px;
