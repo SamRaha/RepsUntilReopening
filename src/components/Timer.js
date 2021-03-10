@@ -5,26 +5,24 @@ import muscleMan from "../assets/muscle-man.png";
 import { useMediaQuery } from "react-responsive";
 
 function Timer(props) {
-    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+    const isMobile = useMediaQuery({ query: "(max-width: 1054px)" });
     console.log("isMobile: ", isMobile);
 
     let mobileImage;
     let mobileImage2;
     let desktopImage;
     if (isMobile) {
-        mobileImage = <img src={props.mobileImage}></img>;
-        mobileImage2 = <img src={props.mobileImage2} style={{ transform: "scaleX(-1)" }}></img>;
+        mobileImage = <img src={props.mobileImage} className="mobileImage"></img>;
+        mobileImage2 = <img src={props.mobileImage2} className="mobileImage2"></img>;
     } else {
         mobileImage = "";
         mobileImage2 = "";
     }
     if (!isMobile) {
-        desktopImage = <img src={props.desktopImage}></img>;
+        desktopImage = <img src={props.desktopImage} className="desktopImage"></img>;
     } else {
         desktopImage = "";
     }
-
-    // let desktopImage2 = <img src={props.desktopImage2}></img>;
 
     let picture = [];
 
@@ -97,8 +95,7 @@ function Timer(props) {
                     </div>
                 </div>
                 <div className={`picture ${props.classNamePicture} `}>
-                    {/* {picture}  */}
-                    {desktopImage} {mobileImage} {mobileImage2}
+                    {props.desktopImage ? desktopImage : ""} {props.mobileImage ? mobileImage : ""} {props.mobileImage2 ? mobileImage2 : ""}
                 </div>
             </div>
         </>
