@@ -13,7 +13,7 @@ function Timer(props) {
     let desktopImage;
     if (isMobile) {
         mobileImage = <img src={props.mobileImage} className="mobileImage"></img>;
-        mobileImage2 = <img src={props.mobileImage2} className="mobileImage2"></img>;
+        mobileImage2 = <img src={props.mobileImage2} className={`mobileImage2 ${props.mobileImage2MarginLeft} `}></img>;
     } else {
         mobileImage = "";
         mobileImage2 = "";

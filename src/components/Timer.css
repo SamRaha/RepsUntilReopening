@@ -84,6 +84,10 @@
     margin-top: 5px;
 }
 
+.mobileImage2MarginLeft {
+    margin-left: 13px;
+}
+
 @media screen and (max-width: 768px) {
     .card-container {
         min-height: 414px;

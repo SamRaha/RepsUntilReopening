@@ -42,6 +42,7 @@ function App() {
                             desktopImage={desktop6}
                             mobileImage={mobile61}
                             mobileImage2={mobile61}
+                            mobileImage2MarginLeft={"mobileImage2MarginLeft"}
                             key={"2"}
                             // classNamePicture="muscle-men-6"
                             // classNameCard="muscle-men-card-6"
