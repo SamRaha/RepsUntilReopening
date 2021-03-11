@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import RightNav from "./RightNav";
 import BuyMeACoffee from "./BuyMeACoffee";
+import Bottle from "../assets/bottle.png";
+import "./Burger.css";
 
 const StyledBurger = styled.div`
     width: 2rem;
@@ -42,13 +44,14 @@ const Burger = () => {
     return (
         <>
             <div className="nav-link">
-                <a target="_" href="https://www.buymeacoffee.com/repsreopening">
+                <a target="_" className="buyLink" href="https://www.buymeacoffee.com/repsreopening">
                     LIKE THIS? BUY US A PROTEIN SHAKE
+                    {/* <BuyMeACoffee /> */}
+                    <svg className="arrow" width="42" height="23" viewBox="0 0 42 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.61487 11.884H40M40 11.884L30.0346 1.91864M40 11.884L30.0346 21.8494" stroke="#FEE440 " stroke-width="2.21453" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                 </a>
-                {/* <BuyMeACoffee /> */}
-                <svg className="arrow" width="42" height="23" viewBox="0 0 42 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.61487 11.884H40M40 11.884L30.0346 1.91864M40 11.884L30.0346 21.8494" stroke="white" stroke-width="2.21453" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                {/* <img className="arrow" src={Bottle} style={{ width: "50px", marginBottom: "10px" }} alt="" /> */}
             </div>
             <StyledBurger open={open} onClick={() => setOpen(!open)}>
                 <div />

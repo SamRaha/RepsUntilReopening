@@ -5,7 +5,7 @@ import muscleMan from "../assets/muscle-man.png";
 import { useMediaQuery } from "react-responsive";
 
 function Timer(props) {
-    const isMobile = useMediaQuery({ query: "(max-width: 1054px)" });
+    const isMobile = useMediaQuery({ query: "(max-width: 1433px)" });
     console.log("isMobile: ", isMobile);
 
     let mobileImage;
