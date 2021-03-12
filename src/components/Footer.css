@@ -39,8 +39,8 @@
 
 @media screen and (max-width: 768px) {
     .footer {
-        min-height: 98px !important;
-        height: 98px;
+        min-height: 70px !important;
+        height: 70px;
         position: sticky !important;
         bottom: 0 !important;
         background-color: black;

@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import "./Nav.css";
-
-const Nav = styled.nav`
-    color: white;
-    background-color: black;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-`;
+import { useMediaQuery } from "react-responsive";
+// height: ${({ isMobileNav }) => (isMobileNav ? "70px" : "100px")};
 
 const Navbar = () => {
+    const isMobileNav = useMediaQuery({ query: "(max-width: 768px)" });
+    const [navHeight, setNavHeight] = useState("");
+
+    useEffect(() => {
+        if (isMobileNav) {
+            setNavHeight("70px");
+        } else {
+            setNavHeight("100px");
+        }
+    }, [isMobileNav]);
+
+    const Nav = styled.nav`
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: ${navHeight};
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+    `;
+
+    console.log("isMobileNav: ", isMobileNav);
     return (
         <Nav>
             <div className="navbar">
