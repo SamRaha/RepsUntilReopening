@@ -52,7 +52,7 @@ function App() {
                             message={"GYMS REOPEN ACROSS THE UK, GO GET THEM GAINS!"}
                             backgroundColor="#FEE440"
                             numberOfImages={12}
-                            onlyShowDays={true}
+                            // onlyShowDays={true}
                             desktopImage={desktop8}
                             mobileImage={mobile81}
                             mobileImage2={mobile81}
